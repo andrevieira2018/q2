@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <h1> Seja bem-vendo nos enviei sua mensagem !!! </h1>
+        <form method="POST" action="/">
+            {{ form.csrf_token }}
+            {{ form.nome.label }} {{ form.nome(size=20) }}
+            {{ form.mensagem.label }} {{ form.mensagem(size=40) }}
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
